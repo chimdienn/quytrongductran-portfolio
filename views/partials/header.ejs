@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
   <link rel="stylesheet" href="/styles/layout.css">
@@ -13,8 +14,12 @@
 <header>
   <nav class="navbar navbar-expand-custom navbar-mainbg">
     <a class="navbar-brand navbar-logo" href="/">My Portfolio</a>
-    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false"
+        aria-label="Toggle navigation">
       <i class="fas fa-bars text-white"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,13 +30,13 @@
         </div>
 
         <li class="nav-item">
-          <a class="nav-link" href="/about"><i class="far fa-copy"></i>About Me</a>
+          <a class="nav-link" href="/about"><i class="far fa-user"></i>About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/projects"><i class="far fa-clone"></i>My Projects</a>
+          <a class="nav-link" href="/projects"><i class="far fa-folder-open"></i>My Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contact"><i class="far fa-calendar-alt"></i>Contact Me</a>
+          <a class="nav-link" href="/contact"><i class="far fa-envelope"></i>Contact Me</a>
         </li>
 
       </ul>

@@ -23,6 +23,7 @@ main {
 
 h1 {
   text-align: center;
+  font-size: 3rem;
 }
 
 p {
@@ -34,72 +35,32 @@ p {
 }
 
 .home-content {
-  margin-top: 50px;
+  margin: 50px 0px;
 }
 .home-content p{
-  font-size: 1.5rem;
+  font-size: 28px;
 }
 .profile {
-  height: 200px;
-  width: 200px;
+  height: 230px;
+  width: 230px;
   object-fit: cover;
   border-radius: 50%;
   margin: 16px 0;
 }
-form {
-  margin-top: 50px;
+
+.about-me p{
+  font-size: 20px;
 }
 
-.feedback-input {
-  color: white;
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border: 2px solid #3586ff;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: 0;
-}
 
-.feedback-input:focus {
-  border: 2px solid #3586ff;
-}
 
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-
-[type="submit"] {
-  width: 100%;
-  background: #3586ff;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
-}
-[type="submit"]:hover {
-  background: #3586ff;
-}
 
 .project-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; 
+  gap: 30px; 
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .project-card {
@@ -111,9 +72,14 @@ textarea {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.project-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+}
+
 .project-card img {
   width: 100%;
-  height: 120px;
+  height: 170px;
   display: block; 
 }
 
@@ -137,13 +103,14 @@ a.clickable-card {
 .contact-box{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .contact-box h2 {
-  font-size: 1.2rem;
-  margin-top: 20px;
+  font-size: 1.4rem;
+  margin-top: 25px;
 }
 
 .contact-box p {
@@ -162,8 +129,8 @@ a.clickable-card {
 }
 
 .icon-circle {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   background-color: #E5E4E2;
   border-radius: 50%;
   display: flex;
@@ -171,4 +138,33 @@ a.clickable-card {
   justify-content: center;
   margin: 0 auto 10px;
   font-size: 24px;
+}
+
+@media (max-width: 1200px){
+  .contact-card {
+    flex: 0 0 calc(100% - 20px);
+  }
+  .contact-box p {
+    font-size: 14px;
+  }
+} 
+
+@media (max-width: 950px) {
+  .project-card {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .contact-box {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .contact-box p {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+  
 }
