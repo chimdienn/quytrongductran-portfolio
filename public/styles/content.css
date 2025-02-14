@@ -52,9 +52,6 @@ p {
   font-size: 20px;
 }
 
-
-
-
 .project-box {
   display: flex;
   flex-wrap: wrap;
@@ -150,6 +147,13 @@ a.clickable-card {
 } 
 
 @media (max-width: 950px) {
+  .home-content p {
+    font-size: 20px;
+  }
+
+  .about-me p{
+    font-size: 15px;
+  }
   .project-card {
     flex: 0 0 calc(50% - 20px);
   }
@@ -160,11 +164,15 @@ a.clickable-card {
   }
 
   .contact-box p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   h1 {
     font-size: 2.2rem;
+  }
+
+  footer {
+    font-size: 12px;
   }
   
 }
